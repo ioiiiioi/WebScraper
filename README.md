@@ -1,7 +1,6 @@
 # WebScraper untuk bukalapak.com
 
-Program ini masih belum sempurna 100%, 
-jadi lebih baik untuk menggunakan V2.0 dari pada yang v2.1 jika ingin mencoba.
+Lebih baik untuk menggunakan V2.0 dari pada yang v2.1 jika ingin mencoba.
 
 Program berjalan tanpa adanya GUI, pengguna cukup memasukkan nama barang yang akan dicari pada website bukalapak.com
 
