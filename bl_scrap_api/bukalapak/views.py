@@ -23,8 +23,6 @@ def find_product(request):
 		page_soup = soup(page_html, "html.parser")
 
 		halaman = page_soup.findAll("span", {"class":"last-page"})
-		# print(page_soup)
-		# return Response({'hasil':keywo})
 		listhalaman = []
 		result = []
 		page_akhir = int(halaman[0].text)
@@ -38,15 +36,11 @@ def find_product(request):
 				print("Maaf Barang Yang Anda Cari Tidak Ada")
 
 
-		# for link in listhalaman:
-			#membuka koneksi, menggambil halaman html
-			# uClient = uReq(link)
+		
 		uClient = uReq(listhalaman[0])
 		page_html = uClient.read()
 		mati = uClient.close()
-		#html parsing
-		# page_soup = soup(page_html, "html.parser")
-		#mengambil setiap produk dari web
+		
 		detils = page_soup.findAll("li", {"class":"col-12--2"})
 		detil = detils[0]
 		print(detils)
